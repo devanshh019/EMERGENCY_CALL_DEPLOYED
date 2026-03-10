@@ -1,0 +1,12 @@
+streamlit
+numpy
+pandas
+tensorflow
+librosa
+soundfile
+scikit-learn
+openai-whisper
+gdown
+nltk
+tqdm
+ffmpeg-python
