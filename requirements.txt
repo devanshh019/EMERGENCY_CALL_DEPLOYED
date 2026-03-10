@@ -15,7 +15,7 @@ numba==0.57.1
 
 gdown==5.2.0
 
-torch==2.2.2
+torch==2.0.1
 openai-whisper==20231117
 
 nltk
