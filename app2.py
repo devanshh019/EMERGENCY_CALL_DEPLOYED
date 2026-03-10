@@ -48,9 +48,6 @@ st.title("🚨 AI Emergency Call Analyzer")
 
 st.write("Analyze emergency calls using AI")
 
-# ----------------------------
-# Load Models
-# ----------------------------
 
 @st.cache_resource
 def load_models():
@@ -62,6 +59,9 @@ def load_models():
 
     return text_model, emotion_model, sound_model, fusion_model
 
+
+
+text_model, emotion_model, sound_model, fusion_model = load_models()
 with open("vectorizer_text.pkl","rb") as f:
     vectorizer = pickle.load(f)
 with open("label_encoder_fusion.pkl", "rb") as f:
