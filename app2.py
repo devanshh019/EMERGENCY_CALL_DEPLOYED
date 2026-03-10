@@ -52,10 +52,10 @@ st.write("Analyze emergency calls using AI")
 @st.cache_resource
 def load_models():
 
-    text_model = tf.keras.models.load_model("text_model.keras")
-    emotion_model = tf.keras.models.load_model("ravdees-2.keras")
-    sound_model = tf.keras.models.load_model("background_model.keras")
-    fusion_model = tf.keras.models.load_model("fusion_model.keras")
+    text_model = tf.keras.models.load_model("text_model.keras", compile=False)
+    emotion_model = tf.keras.models.load_model("ravdees-2.keras", compile=False)
+    sound_model = tf.keras.models.load_model("background_model.keras", compile=False)
+    fusion_model = tf.keras.models.load_model("fusion_model.keras", compile=False)
 
     return text_model, emotion_model, sound_model, fusion_model
 
