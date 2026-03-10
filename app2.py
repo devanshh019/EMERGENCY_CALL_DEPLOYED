@@ -183,13 +183,10 @@ def analyze_audio(audio_path):
     st.warning(category)
     st.write("### 📊 Urgency Probabilities")
 
-for i, label in enumerate(urgency_encoder.classes_):
-
-    prob = float(pred[0][i]) * 100
-
-    st.write(f"{label}: {prob:.2f}%")
-
-    st.progress(float(pred[0][i]))
+    for i, label in enumerate(urgency_encoder.classes_):
+        prob = float(pred[0][i]) * 100
+        st.write(f"{label}: {prob:.2f}%")
+        st.progress(float(pred[0][i]))
 
 
 
