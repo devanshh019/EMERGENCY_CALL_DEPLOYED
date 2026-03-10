@@ -11,3 +11,4 @@ numba==0.59.1
 gdown==5.2.0
 torch>=2.3.0
 openai-whisper
+nltk
